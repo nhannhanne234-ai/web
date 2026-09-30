@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+}
+
+#profile-card {
+    width: 350px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 22px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.job-title {
+    font-size: 14px;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.bio {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.skill-item {
+    display: inline-block;
+    background-color: #e9ecef;
+    color: #495057;
+    font-size: 13px;
+    padding: 6px 12px;
+    margin: 3px;
+    border-radius: 15px;
+}
+
+.btn-contact {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+}
