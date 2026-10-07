@@ -1,0 +1,28 @@
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+}
+
+.tablelist {
+    border-collapse: collapse;
+    border: 1px solid blueviolet;
+}
+
+.tablelist th,
+.tablelist td {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.tablelist th {
+    background-color: blueviolet;
+    color: white;
+}
+
+.tablelist tr:nth-child(even) {
+    background: #fff;
+}
+
+.tablelist tr:nth-child(odd) {
+    background: bisque;
+}

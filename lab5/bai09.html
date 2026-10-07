@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 9</title>
+    <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        color: #333333;
+        background-color: #f8f9fa;
+    }
+
+    .trang {
+        width: 100%;
+        max-width: 960px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+    }
+
+    header img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 14px 20px;
+        background-color: #1e293b;
+    }
+
+    nav a {
+        color: #f8fafc;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+        color: #38bdf8;
+    }
+
+    .noidung {
+        display: flex;
+        gap: 24px;
+        padding: 20px;
+    }
+
+    aside {
+        width: 28%;
+    }
+
+    main {
+        width: 72%;
+    }
+
+    .khung {
+        background-color: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+    .khung h3 {
+        margin: 0;
+        background-color: #800020;
+        color: #ffffff;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .khung ul {
+        padding: 15px 20px 15px 35px;
+    }
+
+    .khung li {
+        margin-bottom: 10px;
+    }
+
+    .khung a {
+        color: #1e3a8a;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .khung a:hover {
+        color: #2563eb;
+        text-decoration: underline;
+    }
+
+    form {
+        padding: 16px;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
+        padding: 8px 12px;
+        margin-bottom: 12px;
+        outline: none;
+        transition: border-color 0.2s ease;
+    }
+
+    input:focus {
+        border-color: #800020;
+    }
+
+    button {
+        width: 100%;
+        background-color: #6b21a8;
+        border: none;
+        border-radius: 6px;
+        color: #ffffff;
+        padding: 10px 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+        background-color: #581c87;
+    }
+
+    h2 {
+        color: #0284c7;
+        margin-bottom: 16px;
+        font-size: 22px;
+    }
+
+    article {
+        border: 1px solid #fecdd3;
+        border-left: 4px solid #800020;
+        background-color: #fff1f2;
+        padding: 16px;
+        border-radius: 6px;
+        margin-bottom: 16px;
+    }
+
+    article h3 {
+        color: #800020;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    article p {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .sao {
+        display: block;
+        width: 120px;
+        margin: 8px 0;
+    }
+
+    .tacgia {
+        text-align: right;
+        font-style: italic;
+        color: #64748b;
+    }
+</style>
+    </style>
+</head>
+<body>
+    <div class="trang">
+        <header><img src="images/bookstore/banner960x198.jpg" alt="Lionsgate Christian Book Cover Design"></header>
+        <nav><a href="#">Home</a><a href="#">About</a></nav>
+        <div class="noidung">
+            <aside>
+                <section class="khung">
+                    <h3>LOGIN FORM</h3>
+                    <form>
+                        <input type="text" name="username" placeholder="Username" aria-label="Username">
+                        <input type="password" name="password" placeholder="Password" aria-label="Password">
+                        <button type="button">Sign in</button>
+                    </form>
+                </section>
+                <section class="khung">
+                    <h3>CATEGORIES</h3>
+                    <ul>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Children Books</a></li>
+                        <li><a href="#">Business Books</a></li>
+                        <li><a href="#">Literature Books</a></li>
+                        <li><a href="#">Music Books</a></li>
+                        <li><a href="#">Technology Books</a></li>
+                    </ul>
+                </section>
+            </aside>
+            <main>
+                <h2>Business Books</h2>
+                <article>
+                    <h3>Trump University - Branding 101</h3>
+                    <img class="sao" src="images/5star.png" alt="5 sao">
+                    <p>Trump University books are practical, straightforward primers on the basics of doing business the Trump way-successfully. Each book is written by a leading expert in the field and includes an inspiring Foreword by Trump himself. Key ideas throughout are illustrated by real-life examples from Trump and</p>
+                    <p class="tacgia"><b>Tác giả:</b> Donald J. Trump<br><b>Ngày phát hành:</b> 4/6/2020</p>
+                </article>
+                <article>
+                    <h3>Đắc nhân tâm</h3>
+                    <p>Đắc nhân tâm là một trong những cuốn sách mà bất cứ ai khi bắt đầu khởi nghiệp đều đã đọc qua. Đây là cuốn sách dùng đầu danh mục bán chạy nhất, là cuốn sách đầu tiên và hay nhất mọi thời đại, có tầm ảnh hưởng làm thay đổi cuộc đời của hàng triệu người trên thế giới, sự thành công phục thuộc 30% năng lực và 70% là thái độ, chính vì vậy thái độ là thứ vô cùng cần thiết để tạo ra sự thành công</p>
+                    <p class="tacgia"><b>Tác giả:</b> Phạm Phước Thịnh<br><b>Ngày phát hành:</b> 17/6/2016</p>
+                </article>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

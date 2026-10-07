@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 8</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+        }
+
+        .trang {
+            width: 960px;
+            margin: auto;
+            border: 1px solid #ccc;
+        }
+
+        header img {
+            display: block;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            height: 40px;
+            align-items: center;
+            background: url("images/menu_bg.png");
+        }
+
+        nav a {
+            width: 16%;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .noidung {
+            display: flex;
+            gap: 5px;
+            padding: 5px;
+            background-color: #ccc;
+        }
+
+        aside {
+            width: 25%;
+            background-color: white;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 10px;
+            color: white;
+            background-color: #075681;
+            font-size: 18px;
+        }
+
+        aside h2 {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .danhmuc {
+            list-style-type: square;
+            padding-left: 32px;
+            color: #28576a;
+        }
+
+        .danhmuc>li {
+            margin: 15px 0;
+        }
+
+        .danhmuc ul {
+            padding-left: 35px;
+            margin-top: 10px;
+            list-style-type: circle;
+        }
+
+        main {
+            width: 75%;
+        }
+
+        .slide {
+            width: 100%;
+            display: block;
+            margin-bottom: 7px;
+        }
+
+        .danhsach {
+            display: flex;
+            gap: 32px;
+            padding: 22px 5px;
+        }
+
+        .sanpham {
+            width: calc((100% - 64px) / 3);
+            padding: 10px;
+            background-color: white;
+            text-align: center;
+            color: #28576a;
+        }
+
+        .laptop {
+            display: block;
+            width: 100%;
+        }
+
+        .sanpham p {
+            font-size: 14px;
+            margin: 14px 0;
+        }
+
+        .sanpham .gia {
+            color: #bf0000;
+            font-weight: bold;
+        }
+
+        .sao {
+            display: block;
+            width: 71px;
+            height: 13px;
+            margin: auto;
+        }
+
+        button {
+            display: block;
+            border: 0;
+            background: none;
+            padding: 0;
+            margin: auto;
+        }
+
+        button img {
+            display: block;
+            width: 80px;
+            height: 23px;
+        }
+
+        footer {
+            display: flex;
+            border-bottom: 4px solid navy;
+            color: navy;
+            padding: 20px 40px 0;
+        }
+
+        footer h3 {
+            width: 50%;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="trang">
+        <header><img src="images/banner2.png" alt="Laptop mua online – giá rẻ kịch sàn"></header>
+        <nav><a href="#">Trang chủ</a><a href="#">Giới thiệu</a><a href="#">Sản phẩm</a><a href="#">Dịch vụ</a><a
+                href="#">Liên hệ</a></nav>
+        <div class="noidung">
+            <aside>
+                <h2>DANH MỤC SẢN PHẨM</h2>
+                <ul class="danhmuc">
+                    <li><b>ASUS</b>
+                        <ul>
+                            <li>Vivobook</li>
+                            <li>Zenbook</li>
+                            <li>Gaming</li>
+                        </ul>
+                    </li>
+                    <li><b>DELL</b>
+                        <ul>
+                            <li>Vostro</li>
+                            <li>Inspiron</li>
+                            <li>XPS</li>
+                        </ul>
+                    </li>
+                    <li><b>APPLE</b>
+                        <ul>
+                            <li>Macbook Pro</li>
+                            <li>Macbook Air</li>
+                            <li>Macbook</li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <main>
+                <img class="slide" src="images/slide.png" alt="MSI Gaming Laptop">
+                <section>
+                    <h2>SẢN PHẨM NỔI BẬT</h2>
+                    <div class="danhsach">
+                        <article class="sanpham">
+                            <img class="laptop" src="images/1.jpg" alt="Acer Predator 112">
+                            <p>Acer Predator 112</p>
+                            <p class="gia">45,000,000 VND</p>
+                            <img class="sao" src="images/sao.png" alt="5 sao">
+                            <button type="button"><img src="images/mua.png" alt="Mua hàng"></button>
+                        </article>
+                        <article class="sanpham">
+                            <img class="laptop" src="images/2.jpg" alt="Asus Vivobook 331">
+                            <p>Asus Vivobook 331</p>
+                            <p class="gia">12,000,000 VND</p>
+                            <img class="sao" src="images/sao.png" alt="5 sao">
+                            <button type="button"><img src="images/mua.png" alt="Mua hàng"></button>
+                        </article>
+                        <article class="sanpham">
+                            <img class="laptop" src="images/3.jpg" alt="Dell Latitude 221">
+                            <p>Dell Latitude 221</p>
+                            <p class="gia">17,000,000 VND</p>
+                            <img class="sao" src="images/sao.png" alt="5 sao">
+                            <button type="button"><img src="images/mua.png" alt="Mua hàng"></button>
+                        </article>
+                    </div>
+                </section>
+                <section>
+                    <h2>SẢN PHẨM BÁN CHẠY</h2>
+                    <div class="danhsach">
+                        <article class="sanpham">
+                            <img class="laptop" src="images/4.jpg" alt="Acer Swift 27A2">
+                            <p>Acer Swift 27A2</p>
+                            <p class="gia">35,000,000 VND</p>
+                            <img class="sao" src="images/sao.png" alt="5 sao">
+                            <button type="button"><img src="images/mua.png" alt="Mua hàng"></button>
+                        </article>
+                        <article class="sanpham">
+                            <img class="laptop" src="images/5.jpg" alt="Dell XPS 1A00">
+                            <p>Dell XPS 1A00</p>
+                            <p class="gia">25,000,000 VND</p>
+                            <img class="sao" src="images/sao.png" alt="5 sao">
+                            <button type="button"><img src="images/mua.png" alt="Mua hàng"></button>
+                        </article>
+                        <article class="sanpham">
+                            <img class="laptop" src="images/6.jpg" alt="Macbook Air 2022">
+                            <p>Macbook Air 2022</p>
+                            <p class="gia">37,000,000 VND</p>
+                            <img class="sao" src="images/sao.png" alt="5 sao">
+                            <button type="button"><img src="images/mua.png" alt="Mua hàng"></button>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <h3>THÔNG TIN</h3>
+            <h3>LIÊN HỆ</h3>
+        </footer>
+    </div>
+</body>
+
+</html>

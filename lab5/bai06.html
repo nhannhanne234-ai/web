@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin: 0;
+            background-color: #dc3545;
+            color: white;
+            font-size: 28px;
+            font-weight: normal;
+        }
+
+        .danhsach {
+            display: flex;
+            gap: 40px;
+            padding: 12px;
+            background-color: antiquewhite;
+        }
+
+        .sanpham {
+            flex: 1;
+            min-width: 0;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .sanpham:hover {
+            background-color: paleturquoise;
+        }
+
+        .sanpham>p:first-child {
+            margin: 0 0 20px;
+        }
+
+        .anhgiay {
+            width: 100%;
+            aspect-ratio: 1;
+            background-image: url("images/anh_bai_6.jpg");
+            background-size: 375.88% 179.95%;
+            background-position: 3.143% 51.864%;
+        }
+
+        .gia {
+            margin: 6px 0 12px;
+            color: #dc3545;
+            font-size: 20px;
+        }
+
+        button {
+            border: none;
+            border-radius: 4px;
+            padding: 12px 16px;
+            background-color: #dc3545;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DANH SÁCH SẢN PHẨM</h1>
+    <div class="danhsach">
+        <article class="sanpham">
+            <p>Giày nữ cao gót Chanel REAL</p>
+            <div class="anhgiay" role="img" aria-label="Giày nữ cao gót Chanel"></div>
+            <p class="gia">4,885,000<sup>đ</sup></p>
+            <button type="button">MUA</button>
+        </article>
+        <article class="sanpham">
+            <p>Giày nữ cao gót Chanel FAKE 1</p>
+            <div class="anhgiay" role="img" aria-label="Giày nữ cao gót Chanel"></div>
+            <p class="gia">1,190,000<sup>đ</sup></p>
+            <button type="button">MUA</button>
+        </article>
+        <article class="sanpham">
+            <p>Giày nữ cao gót Chanel FAKE 2</p>
+            <div class="anhgiay" role="img" aria-label="Giày nữ cao gót Chanel"></div>
+            <p class="gia">85,000<sup>đ</sup></p>
+            <button type="button">MUA</button>
+        </article>
+    </div>
+</body>
+
+</html>

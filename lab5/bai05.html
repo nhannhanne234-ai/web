@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+    <style>
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: #009900;
+        }
+
+        .ngang {
+            display: flex;
+            width: 750px;
+        }
+
+        .ngang li {
+            flex: 1;
+        }
+
+        .doc {
+            width: 225px;
+        }
+
+        .menu a {
+            display: block;
+            padding: 18px 20px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .menu a:hover,
+        .menu a.active {
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Horizontal Navigation Bar</h2>
+    <ul class="menu ngang">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#" class="active">Articles</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <h2>Vertical Navigation Bar</h2>
+    <ul class="menu doc">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#" class="active">Articles</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</body>
+
+</html>

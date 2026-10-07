@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    color: #171414;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 0.64px;
+}
+
+.chuongtrinh {
+    width: 91.6%;
+    max-width: 1440px;
+    margin: auto;
+    padding: 16px 0 48px;
+}
+
+h1 {
+    margin: 0 0 40px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.danhsach {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.chuongtrinh-item {
+    width: 32%;
+    cursor: pointer;
+}
+
+.khunganh {
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.anh {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.chuongtrinh-item:hover .anh {
+    transform: scale(1.08);
+}
+
+h2 {
+    margin: 12px 0;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.chuongtrinh-item:hover h2 {
+    color: #ed1b2f;
+}
+
+.mota {
+    margin: 17px 0;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.timhieu {
+    display: inline-block;
+    margin: 0;
+    color: #ed1b2f;
+    font-weight: 700;
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+}
+
+.chuongtrinh-item:hover .timhieu,
+.timhieu:hover {
+    text-decoration: underline;
+}
+
+.cookie {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #df1731;
+    box-shadow: 0 4px 20px #df173133;
+    cursor: pointer;
+}
+
+.cookie svg {
+    width: 20px;
+    height: 20px;
+}
