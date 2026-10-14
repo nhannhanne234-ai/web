@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính chỉ số BMI</title>
+</head>
+<body>
+    <h2>Tính chỉ số BMI</h2>
+    <label for="chieucao">Chiều cao (m):</label>
+    <input type="number" id="chieucao" step="any">
+    <br><br>
+    <label for="cannang">Cân nặng (kg):</label>
+    <input type="number" id="cannang" step="any">
+    <button onclick="tinhBMI()">Tính BMI</button>
+    <h3 id="ketqua"></h3>
+    <script>
+        function tinhBMI(){
+            let chieuCao = Number(document.getElementById("chieucao").value);
+            let canNang = Number(document.getElementById("cannang").value);
+            if(chieuCao > 0 && canNang > 0){
+                let bmi = canNang / (chieuCao * chieuCao);
+                let ketLuan;
+                if(bmi < 18.5){
+                    ketLuan = "Gầy";
+                }else if(bmi < 25){
+                    ketLuan = "Bình thường";
+                }else if(bmi < 30){
+                    ketLuan = "Thừa cân";
+                }else{
+                    ketLuan = "Béo phì";
+                }
+                document.getElementById("ketqua").innerHTML = "BMI: " + bmi.toFixed(2) + ". " + ketLuan;
+            }else{
+                document.getElementById("ketqua").innerHTML = "Vui lòng nhập chiều cao và cân nặng lớn hơn 0.";
+            }
+        }
+    </script>
+</body>
+</html>

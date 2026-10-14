@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra mật khẩu</title>
+</head>
+<body>
+    <h2>Kiểm tra mật khẩu</h2>
+    <label for="matkhau">Nhập mật khẩu:</label>
+    <input type="password" id="matkhau">
+    <button onclick="kiemtra()">Kiểm tra</button>
+    <h3 id="ketqua"></h3>
+    <script>
+        function kiemtra(){
+            let matKhau = document.getElementById("matkhau").value;
+            if(matKhau.length >= 8){
+                document.getElementById("ketqua").innerHTML = "Mật khẩu hợp lệ.";
+            }else{
+                document.getElementById("ketqua").innerHTML = "Mật khẩu quá ngắn.";
+            }
+        }
+    </script>
+</body>
+</html>

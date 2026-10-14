@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quay thưởng may mắn</title>
+</head>
+<body>
+    <h2>Quay thưởng may mắn</h2>
+    <button onclick="quaythuong()">Quay thưởng</button>
+    <h3 id="ketqua"></h3>
+    <script>
+        function quaythuong(){
+            let danhSach = ["M2", "M3", "M4", "M5", "M8"];
+            let qua = danhSach[Math.floor(Math.random() * danhSach.length)];
+            document.getElementById("ketqua").innerHTML = "Phần thưởng của bạn là: " + qua;
+        }
+    </script>
+</body>
+</html>

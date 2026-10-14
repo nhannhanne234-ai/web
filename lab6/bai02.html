@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Chương trình tính tuổi</h2>
+    <label for="">Nhập vào năm sinh của bạn</label>
+    <input type="number" id="namsinh">
+    <br><br>
+    <button onclick="tinhTuoi()">Tính Tuổi</button>
+    <p id="ketqua"></p>
+
+    <script>
+        //viết code js ở đây
+        function tinhTuoi(){
+            let yourBirth = document.getElementById("namsinh").value;
+            let currentYear = new Date().getFullYear();
+            let yourAge = currentYear - yourBirth;
+            document.getElementById("ketqua").innerHTML = "Tuổi của bạn: " + yourAge;
+        }
+    </script>
+</body>
+</html>

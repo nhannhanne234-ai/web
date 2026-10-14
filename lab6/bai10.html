@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính đơn giản</title>
+</head>
+<body>
+    <h2>Máy tính đơn giản</h2>
+    <label for="so1">Số thứ nhất:</label>
+    <input type="number" id="so1" step="any">
+    <br><br>
+    <label for="so2">Số thứ hai:</label>
+    <input type="number" id="so2" step="any">
+    <br><br>
+    <button onclick="tinh('+')">Cộng</button>
+    <button onclick="tinh('-')">Trừ</button>
+    <button onclick="tinh('*')">Nhân</button>
+    <button onclick="tinh('/')">Chia</button>
+    <h3 id="ketqua"></h3>
+    <script>
+        function tinh(phepTinh){
+            let so1 = Number(document.getElementById("so1").value);
+            let so2 = Number(document.getElementById("so2").value);
+            let ketQua;
+            if(phepTinh == "+"){
+                ketQua = so1 + so2;
+            }else if(phepTinh == "-"){
+                ketQua = so1 - so2;
+            }else if(phepTinh == "*"){
+                ketQua = so1 * so2;
+            }else if(so2 == 0){
+                ketQua = "Không thể chia cho 0.";
+            }else{
+                ketQua = so1 / so2;
+            }
+            document.getElementById("ketqua").innerHTML = "Kết quả: " + ketQua;
+        }
+    </script>
+</body>
+</html>
