@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 9</title>
+</head>
+<body>
+    <script>
+        function alternateSum(arr) {
+            let sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (i % 2 === 0) {
+                    sum += arr[i];
+                } else {
+                    sum -= arr[i];
+                }
+            }
+            return sum;
+        }
+        document.write("Result 1: " + alternateSum([10, 5, 6, 3]) + "<br>");
+        document.write("Result 2: " + alternateSum([1, 2, 3, 4, 5]));
+    </script>
+</body>
+</html>

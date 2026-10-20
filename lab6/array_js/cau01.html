@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <h2>Kết quả bài tập:</h2>
+
+    <script>
+        function findMax(arr) {
+            if (arr.length === 0) return null;
+            let max = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+
+        document.write("Kết quả 1: " + findMax([1, 3, 5, 7, 9]) + "<br>");
+        document.write("Kết quả 2: " + findMax([10, 20, 30, 40, 50]) + "<br>");
+        document.write("Kết quả 3: " + findMax([-5, -2, -1, -3]) + "<br>");
+    </script>
+</body>
+</html>

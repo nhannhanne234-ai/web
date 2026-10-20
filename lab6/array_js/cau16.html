@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 16</title>
+</head>
+<body>
+    <script>
+        function findPairsWithSum(arr, sum) {
+            let pairs = [];
+            let visited = new Set();
+            let usedPairs = new Set();
+            for (let i = 0; i < arr.length; i++) {
+                let current = arr[i];
+                let target = sum - current;
+                if (visited.has(target)) {
+                    let pair = [Math.min(current, target), Math.max(current, target)];
+                    let pairKey = pair.toString();
+                    if (!usedPairs.has(pairKey)) {
+                        usedPairs.add(pairKey);
+                        pairs.push(pair);
+                    }
+                }
+                visited.add(current);
+            }
+            return pairs;
+        }
+        document.write("Result: " + JSON.stringify(findPairsWithSum([1, 2, 3, 4, 5], 5)));
+    </script>
+</body>
+</html>

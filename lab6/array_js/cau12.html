@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 12</title>
+</head>
+<body>
+    <script>
+        function findLongestWord(arr) {
+            if (arr.length === 0) return "";
+            let longest = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i].length > longest.length) {
+                    longest = arr[i];
+                }
+            }
+            return longest;
+        }
+        document.write("Result 1: " + findLongestWord(["apple", "banana", "cherry", "date"]) + "<br>");
+        document.write("Result 2: " + findLongestWord(["hello", "world", "this", "is", "great"]));
+    </script>
+</body>
+</html>
